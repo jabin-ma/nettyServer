@@ -1,21 +1,18 @@
 package com.majipeng.nettyServer.handler;
 
-import com.majipeng.nettyServer.router.RouterByMothed;
-
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-import majipeng.protocol.Protocol;
 import majipeng.utils.Log;
 
 public class MessageHandler extends ChannelInboundHandlerAdapter {
 	static final String TAG = "MessageHandler";
 	@Override
 	public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-		Log.d(TAG, ""+msg);
-		if(msg instanceof Protocol){
-			RouterByMothed rou=new RouterByMothed();
-			rou.router((Protocol) msg);
-		}
+//		if(msg instanceof Protocol){
+//			RouterByMothed rou=new RouterByMothed();
+//			rou.router((Protocol) msg);
+//		}
+		Log.d(TAG, msg.toString());
 		super.channelRead(ctx, msg);
 	}
 
