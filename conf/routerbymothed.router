@@ -1,0 +1,2 @@
+#该文件用于根据请求Mothed指定Router
+POST=com.majipeng.nettyServer.router.PostRouterByPath
