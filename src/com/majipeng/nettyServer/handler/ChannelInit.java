@@ -1,5 +1,7 @@
 package com.majipeng.nettyServer.handler;
 
+import com.majipeng.nettylib.utils.Log;
+
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
@@ -12,7 +14,6 @@ import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.timeout.IdleStateHandler;
 import io.netty.util.concurrent.DefaultEventExecutorGroup;
 import io.netty.util.concurrent.EventExecutorGroup;
-import majipeng.utils.Log;
 
 public class ChannelInit extends ChannelInitializer<SocketChannel> {
 	static final String TAG = "ChanelInit";

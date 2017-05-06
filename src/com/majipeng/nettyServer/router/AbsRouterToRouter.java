@@ -1,9 +1,9 @@
 package com.majipeng.nettyServer.router;
 
 import com.majipeng.nettyServer.utils.ServerConfig;
+import com.majipeng.nettylib.utils.Log;
 
-import majipeng.protocol.Protocol;
-import majipeng.utils.Log;
+import io.netty.handler.ssl.ApplicationProtocolConfig.Protocol;
 
 //提供一个需要处理的key，该类可以帮助你自动分发请求
 public abstract class AbsRouterToRouter implements Router<Protocol> {

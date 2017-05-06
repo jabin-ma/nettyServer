@@ -5,16 +5,14 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.channel.group.ChannelGroup;
 import io.netty.channel.group.DefaultChannelGroup;
-import io.netty.util.AttributeKey;
 import io.netty.util.concurrent.GlobalEventExecutor;
-import majipeng.model.JID;
 
 @Sharable
 public class ClientManager extends ChannelInboundHandlerAdapter {
 	private  static final ClientManager instance = new ClientManager();
 	private  final ChannelGroup allChannel = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
 //    private final HashMap<String,ChannelId> allChannelId=new HashMap<>();
-	AttributeKey<JID> JID_KEY = AttributeKey.valueOf("majipeng:JID");
+//	AttributeKey<JID> JID_KEY = AttributeKey.valueOf("majipeng:JID");
 
 	public static ClientManager getInstance() {
 		return instance;

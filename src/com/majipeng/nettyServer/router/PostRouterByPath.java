@@ -1,6 +1,6 @@
 package com.majipeng.nettyServer.router;
 
-import majipeng.protocol.Protocol;
+import io.netty.handler.ssl.ApplicationProtocolConfig.Protocol;
 //自己不处理事件,分发
 public class PostRouterByPath extends AbsRouterToRouter{
 	public PostRouterByPath() {

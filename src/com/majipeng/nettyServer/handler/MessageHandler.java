@@ -1,8 +1,9 @@
 package com.majipeng.nettyServer.handler;
 
+import com.majipeng.nettylib.utils.Log;
+
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-import majipeng.utils.Log;
 
 public class MessageHandler extends ChannelInboundHandlerAdapter {
 	static final String TAG = "MessageHandler";

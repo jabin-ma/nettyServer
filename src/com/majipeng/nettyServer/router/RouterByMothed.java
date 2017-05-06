@@ -1,6 +1,6 @@
 package com.majipeng.nettyServer.router;
 
-import majipeng.protocol.Protocol;
+import io.netty.handler.ssl.ApplicationProtocolConfig.Protocol;
 
 public class RouterByMothed extends AbsRouterToRouter {
 	public static String CONF_NAME = "routerbymothed.router";

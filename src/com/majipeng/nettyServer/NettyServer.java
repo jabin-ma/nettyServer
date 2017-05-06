@@ -3,13 +3,13 @@ package com.majipeng.nettyServer;
 import java.net.URISyntaxException;
 
 import com.majipeng.nettyServer.handler.ChannelInit;
+import com.majipeng.nettylib.utils.Log;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import majipeng.utils.Log;
 
 public class NettyServer {
 

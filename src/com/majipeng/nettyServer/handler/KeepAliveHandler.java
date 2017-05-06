@@ -1,8 +1,9 @@
 package com.majipeng.nettyServer.handler;
 
+import com.majipeng.nettylib.utils.Log;
+
 import io.netty.channel.ChannelDuplexHandler;
 import io.netty.channel.ChannelHandlerContext;
-import majipeng.utils.Log;
 
 public class KeepAliveHandler extends ChannelDuplexHandler {
 	static final String TAG = KeepAliveHandler.class.getSimpleName();
