@@ -5,7 +5,5 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/nettylib"/>
 	<classpathentry kind="lib" path="/nettylib/libs/fastjson-1.2.23.jar"/>
 	<classpathentry kind="lib" path="/nettylib/libs/netty-all-4.1.7.Final.jar"/>
-	<classpathentry kind="lib" path="/nettylib/libs/mysql-connector-java-5.1.40-bin.jar"/>
-	<classpathentry kind="lib" path="/nettylib/libs/commons-dbutils-1.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
